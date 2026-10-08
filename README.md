@@ -17,7 +17,7 @@ A React + TypeScript dashboard for visualizing AI-assisted compliance assessment
 React, TypeScript, Vite, Tailwind, Recharts
 
 ## Backend
-https://github.com/Eng-Manar-Alosaimi/grc-compliance-backend
+[https://github.com/Eng-Manar-Alosaimi/grc-compliance-backend](https://grc-compliance-dashboard-phi.vercel.app/)
 
 ## Note
 This is a working prototype (MVP), not production-ready.
