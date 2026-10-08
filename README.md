@@ -1,26 +1,23 @@
-# SAMA GRC Compliance Analytics Dashboard
+# GRC Compliance Dashboard
 
-React 18 + TypeScript dashboard for SAMA Key Principles of Governance assessments.
+A React + TypeScript dashboard for visualizing AI-assisted compliance assessments against SAMA Key Principles.
 
-## Run
+## Live Demo
+[https://grc-compliance-dashboard.vercel.app](https://grc-compliance-dashboard-phi.vercel.app/)
 
-```bash
-bun install
-bun run dev
-```
+## Features
+- KPI Cards (Assessment Score, Risk-Weighted Score, Risk Exposure, Evidence Coverage)
+- Trend Chart (Q1 → Q2 → Q3)
+- Category Comparison
+- Donut Chart (Status Distribution)
+- Traceability Drill-down
+- High-Risk Gaps Table
 
-Then open the URL Vite prints (typically http://localhost:5173).
+## Tech Stack
+React, TypeScript, Vite, Tailwind, Recharts
 
-- `/` — PDF intake, framework selector, **Run Assessment** (`POST http://localhost:8000/assess`), and **Load Demo Data (Q1, Q2, Q3)**
-- `/dashboard` — KPIs, trends, category comparison, status donut, high-risk gaps, traceability
+## Backend
+https://github.com/Eng-Manar-Alosaimi/grc-compliance-backend
 
-Production build:
-
-```bash
-bun run build
-bun run preview
-```
-
-## Data
-
-Quarterly packs live in `src/data/q1.json`, `q2.json`, and `q3.json`. Replace those files with your assessment output; the UI reads `raw_assessments` and `analytics` only from those documents (missing `status_distribution` keys are treated as 0).
+## Note
+This is a working prototype (MVP), not production-ready.
